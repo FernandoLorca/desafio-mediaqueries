@@ -1,9 +1,10 @@
 :root {
-  --colorPrincipal: #455a64;
+  --colorPrincipal: #212223;
   --colorLight: #718792;
   --colorDark: #1c313a;
   --colorWhite: #fff;
-  --colorGrey: #eceff1;
+  --colorGrey: #eae8f6;
+  --colorBtn: #c8c11a;
   --fontFamily: "Open Sans", sans-serif;
   --fontRegular: 400;
   --fontBold: 700;
@@ -71,8 +72,8 @@ ul {
 }
 
 .btn-primary {
-  background-color: var(--colorPrincipal);
-  color: var(--colorWhite);
+  background-color: var(--colorBtn);
+  color: var(--colorPrincipal);
   display: flex;
   justify-content: center;
   padding: 0.5rem;
@@ -82,7 +83,8 @@ ul {
 }
 
 .btn-primary:hover {
-  background-color: var(--colorDark);
+  background-color: var(--colorPrincipal);
+  color: var(--colorWhite);
 }
 
 .btn-primary:active {
