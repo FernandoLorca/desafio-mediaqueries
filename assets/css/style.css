@@ -1,0 +1,145 @@
+:root {
+  --colorPrincipal: #455a64;
+  --colorLight: #718792;
+  --colorDark: #1c313a;
+  --colorWhite: #fff;
+  --colorGrey: #eceff1;
+  --fontFamily: "Open Sans", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 64%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: var(--fontFamily);
+  color: var(--colorPrincipal);
+  background-color: var(--colorWhite);
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "filter"
+    "products"
+    "footer";
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorPrincipal);
+  transition: all 200ms ease;
+}
+
+a:hover {
+  color: var(--colorBtns);
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-family: var(--fontPrincipals);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn-primary {
+  background-color: var(--colorBtns);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--colorBtnsActive);
+  color: var(--colorWhite);
+}
+
+.btn-primary:active {
+  opacity: 0.75;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: var(--colorPrincipal);
+  color: var(--colorWhite);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav__navTitulo {
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav__navTitulo .nav__navTitulo--imgTituloWrapper {
+  width: 2rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .nav__navHamburguer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .nav__navHamburguer .nav__navTitulo--imgHamburguerWrapper {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter {
+  grid-area: filter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: var(--colorGrey);
+}
+
+.filter label {
+  margin-bottom: 1rem;
+}
+
+.filter select {
+  border: 1px solid var(--colorLight);
+  width: 30%;
+  padding: 1rem 0;
+  border-radius: 0.3rem;
+  color: var(--colorDark);
+}
+
+.products {
+  grid-area: products;
+}
+
+.footer {
+  grid-area: footer;
+}
