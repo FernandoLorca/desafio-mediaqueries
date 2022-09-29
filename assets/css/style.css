@@ -195,6 +195,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 200ms ease;
 }
 
 .products
@@ -223,6 +225,13 @@ ul {
 .products
   .products__pagination
   .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperChevron:active {
+  opacity: 0.75;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
   .products__paginationWrapper--icoWrapperChevron
   img {
   width: 1rem;
@@ -238,6 +247,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 200ms ease;
 }
 
 .products
@@ -245,6 +256,13 @@ ul {
   .products__paginationWrapper
   .products__paginationWrapper--icoWrapperNumber:hover {
   background-color: var(--colorGrey);
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperNumber:active {
+  opacity: 0.75;
 }
 
 .products
@@ -271,4 +289,28 @@ ul {
 
 .footer {
   grid-area: footer;
+  background-color: var(--colorPrincipal);
+  padding: 1rem 0;
+}
+
+.footer .footer__rrssWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer__rrssWrapper img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.footer .footer__rrssWrapper img:last-child {
+  margin-right: 0;
+}
+
+.footer p {
+  color: var(--colorWhite);
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1rem;
 }
