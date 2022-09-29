@@ -13,7 +13,6 @@ html {
   box-sizing: border-box;
   font-size: 64%; /* 10px = 1rem */
   scroll-behavior: smooth;
-  font-weight: ;
 }
 
 body {
@@ -177,7 +176,97 @@ ul {
   width: 80%;
 }
 
-.products .products__card .products__pagination {
+.products .products__pagination {
+  margin: 2rem 0;
+}
+
+.products .products__pagination .products__paginationWrapper {
+  display: flex;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperChevron {
+  width: 1rem;
+  border: 1px solid var(--colorLight);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperChevron:nth-child(1) {
+  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperChevron:nth-child(5) {
+  border-bottom-right-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperChevron:hover {
+  background-color: var(--colorGrey);
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperChevron
+  img {
+  width: 1rem;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperNumber {
+  border: 1px solid var(--colorLight);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperNumber:hover {
+  background-color: var(--colorGrey);
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperNumber:nth-child(2) {
+  border-left: none;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperNumber:nth-child(3) {
+  border-left: none;
+}
+
+.products
+  .products__pagination
+  .products__paginationWrapper
+  .products__paginationWrapper--icoWrapperNumber:nth-child(4) {
+  border-left: none;
+  border-right: none;
 }
 
 .footer {
