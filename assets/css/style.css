@@ -103,6 +103,10 @@ ul {
   align-items: center;
 }
 
+.nav .nav__navTitulo h1 {
+  font-size: 2rem;
+}
+
 .nav .nav__navTitulo .nav__navTitulo--imgTituloWrapper {
   width: 2rem;
   margin-right: 0.5rem;
@@ -131,7 +135,8 @@ ul {
 /* Desktop -------------- */
 @media (min-width: 576px) {
   .nav .nav__menu {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   .nav .nav__menu ul {
